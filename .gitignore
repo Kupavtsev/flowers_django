@@ -1,0 +1,7 @@
+api/__pycache__
+api/migrations
+
+backend/__pycache__
+
+flowers/__pycache__
+flowers/migrations
