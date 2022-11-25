@@ -349,7 +349,7 @@
 						<li><a href="#">Акции</a></li>
 						<li class="dropdown default-dropdown"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">Страницы <i class="fa fa-caret-down"></i></a>
 							<ul class="custom-menu">
-								<li><a href="index.html">Главная</a></li>
+								<li><a href="{% url 'index' %}">Главная</a></li>
 								<li><a href="products.html">Товары</a></li>
 								<li><a href="product-page.html">Детали товара</a></li>
 								<li><a href="checkout.html">Оформление</a></li>
@@ -368,8 +368,8 @@
 	<div id="breadcrumb">
 		<div class="container">
 			<ul class="breadcrumb">
-				<li><a href="#">Home</a></li>
-				<li class="active">Products</li>
+				<li><a href="{% url 'index' %}">Домой</a></li>
+				<li class="active">Цветы</li>
 			</ul>
 		</div>
 	</div>
@@ -453,7 +453,7 @@
 						<h3 class="aside-title">Тип букета</h3>
 						<ul class="list-links">
 							{% for rubric in rubrics %}
-							<li><a href="/flowers/{{ rubric.pk }}">{{ rubric.name }}</a></li>
+							<li><a href="{% url 'by_rubric' rubric.pk %}">{{ rubric.name }}</a></li>
 							{% endfor %}
 						</ul>
 					</div>
@@ -567,7 +567,7 @@
 										<img src="/static/img/product01.jpg" alt="">
 									</div>
 									<div class="product-body">
-										<h3 class="product-price">{{ product.price }}<del class="product-old-price">$45.00</del></h3>
+										<h3 class="product-price">{{ product.price }}р. <del class="product-old-price"> 4500р.</del></h3>
 										<div class="product-rating">
 											<i class="fa fa-star"></i>
 											<i class="fa fa-star"></i>

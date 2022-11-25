@@ -5,3 +5,5 @@ backend/__pycache__
 
 flowers/__pycache__
 flowers/migrations
+
+venv_flw/
